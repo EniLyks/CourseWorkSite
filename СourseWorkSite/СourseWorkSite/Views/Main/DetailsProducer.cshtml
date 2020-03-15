@@ -1,0 +1,108 @@
+﻿@model СourseWorkSite.Models.Producer
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = Html.DisplayFor(model => model.ProducerName);
+}
+
+<h2>Компания @Html.DisplayFor(model => model.ProducerName)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Site)
+        </dt>
+
+        <dd>
+            <a target="_blank" href="@Model.Site">@Model.Site</a>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<hr />
+<table class="table">
+    <tr>
+        @if (Model.Plugins.Count != 0)
+        {
+            <th>
+                Разработанные плагины
+            </th>
+        }
+        @if (Model.DAWs.Count != 0)
+        {
+            <th>
+                Разработанные DAW
+            </th>
+        }
+        @if (Model.LibrarySamples.Count != 0)
+        {
+            <th>
+                Разработанные библиотеки семплов
+            </th>
+        }
+        @if (Model.PackagePlugins.Count != 0)
+        {
+            <th>
+                Разработанные пакеты плагинов
+            </th>
+        }
+    </tr>
+
+    <tr>
+        @if (Model.Plugins.Count != 0)
+        {
+            <td>
+                @foreach (var item in Model.Plugins)
+                {<table> <tr> <td> @Html.ActionLink(item.PluginName, "DetailsPlugin", new { id = item.PluginId }) </td> </tr></table>}
+            </td>
+        }
+
+        @if (Model.DAWs.Count != 0)
+        {
+            <td>
+                @foreach (var item in Model.DAWs)
+                {<table> <tr> <td>  @Html.ActionLink(item.DAWName, "DetailsDAW", new { id = item.DAWId })</td> </tr></table>}
+            </td>
+        }
+
+        @if (Model.LibrarySamples.Count != 0)
+        {
+            <td>
+                @foreach (var item in Model.LibrarySamples)
+                {<table> <tr> <td>   @Html.ActionLink(item.LibraryName, "DetailsLibrarySample", new { id = item.LibrarySampleId })</td> </tr></table>}
+            </td>
+        }
+
+        @if (Model.PackagePlugins.Count != 0)
+        {
+            <td>
+                @foreach (var item in Model.PackagePlugins)
+                {<table> <tr> <td>    @Html.ActionLink(item.PackageName, "DetailsPackagePlugin", new { id = item.PackagePluginId})</td> </tr></table>}
+            </td>
+        }
+    </tr>
+</table>
+
+
+
+<p>
+    @Html.ActionLink("К списку производителей", "PageProducer")
+</p>

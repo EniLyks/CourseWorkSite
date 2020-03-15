@@ -1,0 +1,107 @@
+﻿@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = "GraphOut";
+}
+
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Плагины', @ViewData["CountPlugins"]],
+                ['Пакеты семплов', @ViewData["CountLibrarySamples"]],
+                ['DAW', @ViewData["CountDAW"]]
+            ]);
+
+            var options = {
+                title: 'Количество объектов на сайте'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['@ViewData["NameProducer1"]', @ViewData["CountObjectProducer1"]],
+                ['@ViewData["NameProducer2"]', @ViewData["CountObjectProducer2"]],
+                ['@ViewData["NameProducer3"]', @ViewData["CountObjectProducer3"]],
+                ['@ViewData["NameProducer4"]', @ViewData["CountObjectProducer4"]],
+                ['Остальные производители', @ViewData["CountObjectProducerOther"]]
+            ]);
+
+            var options = {
+                title: 'Топ производителей'
+            };
+
+            var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+            chart2.draw(data, options);
+        }
+
+    </script>
+
+    <script src="https://www.google.com/jsapi"></script>
+    <script>
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Название типа', 'Количество плагинов'],
+                ['@ViewData["NameTypePlugin1"]', @ViewData["CountPlugin1"]],
+                ['@ViewData["NameTypePlugin2"]', @ViewData["CountPlugin2"]],
+                ['@ViewData["NameTypePlugin3"]', @ViewData["CountPlugin3"]],
+                ['@ViewData["NameTypePlugin4"]', @ViewData["CountPlugin4"]],
+                ['@ViewData["NameTypePlugin5"]', @ViewData["CountPlugin5"]],
+                ['@ViewData["NameTypePlugin6"]', @ViewData["CountPlugin6"]],
+                ['@ViewData["NameTypePlugin7"]', @ViewData["CountPlugin7"]],
+                ['@ViewData["NameTypePlugin8"]', @ViewData["CountPlugin8"]],
+                ['@ViewData["NameTypePlugin9"]', @ViewData["CountPlugin9"]],
+                ['@ViewData["NameTypePlugin10"]', @ViewData["CountPlugin10"]],
+                ['@ViewData["NameTypePlugin11"]', @ViewData["CountPlugin11"]],
+            ]);
+            var options = {
+                title: 'Количество плагинов по типам',
+                hAxis: { title: 'Тип' },
+                vAxis: { title: 'Количество в штуках' }
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('oil'));
+            chart.draw(data, options);
+        }
+    </script>
+
+</head>
+<body>
+
+
+    <table cellspacing="0" cellpadding="5">
+        <tr>
+
+            <td width="200" valign="top">
+                <div id="piechart" style="width: 600px; height: 500px;"></div>
+            </td>
+
+            <td valign="top">
+                <div id="piechart2" style="width: 600px; height: 500px;"></div>
+            </td>
+
+        </tr>
+    </table>
+    <center> <div id="oil" style="width: 1200px; height: 600px;"></div></center>
+</body>
+</html>

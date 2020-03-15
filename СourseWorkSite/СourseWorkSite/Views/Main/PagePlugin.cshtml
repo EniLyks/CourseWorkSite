@@ -1,0 +1,37 @@
+﻿@model СourseWorkSite.Models.PluginViewModel
+@using СourseWorkSite.Helpers
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Плагины";
+}
+
+<h2>Страница с плагинами</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Поиск" />
+    </p>
+}
+
+<label>Сортировка: </label>
+@Html.ActionLink("По имени", "PagePlugin", new { sortOrder = ViewBag.NameSortParam, currentFilter = ViewBag.CurrentFilter }) |
+@Html.ActionLink("По цене", "PagePlugin", new { sortOrder = ViewBag.CostSortParam, currentFilter = ViewBag.CurrentFilter })
+@foreach (var item in Model.Plugins)
+{
+    <div class="jumbotron">
+        <p>
+            @Html.ActionLink(@item.PluginName, "DetailsPlugin", new { id = item.PluginId })
+        </p>
+        <p>Производитель: @Html.ActionLink(@item.Producer.ProducerName, "DetailsProducer", new { id = item.ProducerId })</p>
+        <p>Тип: @Html.ActionLink(@item.TypePlugin.Type, "DetailsTypePlugin", new { id = item.TypePlugin.TypePluginId })</p>
+        <p>В составе пакета: @Html.ActionLink(@item.PackagePlugin.PackageName, "DetailsPackagePlugin", new { id = item.PackageId })</p>
+        <p>Цена: @item.Cost</p>
+    </div>
+}
+<br />
+<div class="btn-group">
+    @Html.PageLinks(Model.PageInfo, x => Url.Action("PagePlugin", new { page = x, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>

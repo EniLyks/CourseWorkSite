@@ -1,0 +1,108 @@
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ApplicationInsights.config
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\СourseWorkSite.dll.config
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\СourseWorkSite.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\СourseWorkSite.pdb
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Antlr3.Runtime.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\EntityFramework.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\EntityFramework.SqlServer.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.Web.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Newtonsoft.Json.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Helpers.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Mvc.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Optimization.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Razor.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\WebGrease.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\EntityFramework.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\EntityFramework.SqlServer.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Helpers.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Mvc.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Optimization.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.Razor.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Antlr3.Runtime.pdb
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Newtonsoft.Json.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.Web.xml
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Razor.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.csprojResolveAssemblyReference.cache
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.csproj.CoreCompileInputs.cache
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.dll
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.pdb
+C:\Users\SkyLine\source\repos\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.csproj.CopyComplete
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ApplicationInsights.config
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\СourseWorkSite.dll.config
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\СourseWorkSite.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\СourseWorkSite.pdb
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Antlr3.Runtime.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\EntityFramework.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\EntityFramework.SqlServer.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.DependencyCollector.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.Web.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.WindowsServer.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.ApplicationInsights.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.Web.Infrastructure.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Newtonsoft.Json.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Helpers.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Mvc.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Optimization.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Razor.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Deployment.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Razor.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\WebGrease.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\EntityFramework.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\EntityFramework.SqlServer.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Helpers.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Mvc.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Optimization.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.Razor.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Deployment.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\System.Web.WebPages.Razor.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Antlr3.Runtime.pdb
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Newtonsoft.Json.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.ApplicationInsights.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.DependencyCollector.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.WindowsServer.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\Microsoft.AI.Web.xml
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Helpers.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Mvc.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Optimization.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.Razor.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.WebPages.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.WebPages.Deployment.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\bin\ru\System.Web.WebPages.Razor.resources.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.csprojResolveAssemblyReference.cache
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.csproj.CoreCompileInputs.cache
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.csproj.CopyComplete
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.dll
+F:\Folderes of desktop\Склад Файлов\Копии проектов Visual Studio\СourseWorkSite\СourseWorkSite\obj\Debug\СourseWorkSite.pdb

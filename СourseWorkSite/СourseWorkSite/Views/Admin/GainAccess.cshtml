@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Вход в админскую панель";
+}
+
+<div align="center">
+    <h2>Введите логин и пароль</h2>
+    @using (Html.BeginForm())
+    {
+    <div>
+        <p>Логин</p>
+        <p>@Html.TextBox("login")</p>
+        <p>Пароль</p>
+        <p>@Html.Password("password")</p>
+        <p style="color: red">@ViewBag.Fail</p>
+
+        <input type="submit" value="Войти" class="btn btn-default" />
+    </div>
+    }
+</div>

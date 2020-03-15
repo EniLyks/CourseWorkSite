@@ -1,0 +1,61 @@
+﻿@model IEnumerable<СourseWorkSite.Models.DAW>
+
+@{
+    ViewBag.Title = "Таблица DAW";
+}
+
+<h2>Таблица DAW</h2>
+
+<form method="get" style="display:inline" class="form-inline">
+    <p>@Html.ActionLink("Добавить DAW", "CreateDAW")</p>
+    <label>Теги: </label>
+    @Html.DropDownList("producerId", ViewBag.Producers as SelectList, htmlAttributes: new { @class = "form-control" })
+    <input type="submit" value="Применить фильтр" class="btn btn-default" />
+
+</form>
+<form style="display:inline">
+    <input type="submit" value="Отменить" class="btn btn-default" />
+</form>
+<p></p>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString")
+        <input type="submit" value="Поиск" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DAWName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DAWName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producer.ProducerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "EditDAW", new { id = item.DAWId }) |
+                @Html.ActionLink("Удалить DAW", "DeleteDAW", new { id = item.DAWId })
+            </td>
+        </tr>
+    }
+
+</table>

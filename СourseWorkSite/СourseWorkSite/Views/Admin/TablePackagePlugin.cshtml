@@ -1,0 +1,53 @@
+﻿@model IEnumerable<СourseWorkSite.Models.PackagePlugin>
+
+@{
+    ViewBag.Title = "Пакеты плагинов";
+}
+
+<h2>Пакеты плагинов</h2>
+
+<p>
+    @Html.ActionLink("Добавить пакет", "CreatePackagePlugin")
+</p>
+<p></p>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString")
+        <input type="submit" value="Поиск" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PackageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producer.ProducerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "EditPackagePlugin", new { id = item.PackagePluginId })
+            </td>
+        </tr>
+    }
+
+</table>

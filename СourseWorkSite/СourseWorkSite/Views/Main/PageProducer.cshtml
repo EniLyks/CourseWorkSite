@@ -1,0 +1,37 @@
+﻿@model СourseWorkSite.Models.ProducerViewModel
+@using СourseWorkSite.Helpers
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Производители";
+}
+
+<h2>Страница с производителями</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Поиск" />
+    </p>
+}
+<label>Сортировка: </label>
+@Html.ActionLink("По имени", "PageProducer", new { sortOrder = ViewBag.NameSortParam, currentFilter = ViewBag.CurrentFilter })
+@foreach (var item in Model.Producers)
+{
+    if (item.ProducerId != 0)
+    {
+        <div class="jumbotron">
+            <p>
+                @Html.ActionLink(@item.ProducerName, "DetailsProducer", new { id = item.ProducerId })
+            </p>
+            <p>
+                Сайт: <a target="_blank" href="@item.Site">@item.Site</a>
+            </p>
+        </div>
+    }
+}
+<br />
+<div class="btn-group">
+    @Html.PageLinks(Model.PageInfo, x => Url.Action("PageProducer", new { page = x, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>

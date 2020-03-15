@@ -1,0 +1,24 @@
+﻿@model СourseWorkSite.Models.TypePlugin
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@{
+    ViewBag.Title = @Html.DisplayFor(model => model.Type);
+}
+
+<h2> @Html.DisplayFor(model => model.Type)</h2>
+
+<div>
+    <hr />
+    <dl>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Перейти на главную страницу", "HomePage")
+</p>

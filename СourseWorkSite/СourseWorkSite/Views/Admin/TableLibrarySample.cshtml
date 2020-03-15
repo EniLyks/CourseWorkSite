@@ -1,0 +1,68 @@
+﻿@model IEnumerable<СourseWorkSite.Models.LibrarySample>
+
+@{
+    ViewBag.Title = "Библиотеки семплов";
+}
+
+<h2>Библиотеки семплов</h2>
+
+<form method="get" style="display:inline" class="form-inline">
+    <p>@Html.ActionLink("Создать новую библиотеку", "CreateLibrarySample")</p>
+    <label>Теги: </label>
+    @Html.DropDownList("producerId", ViewBag.Producers as SelectList, htmlAttributes: new { @class = "form-control" })
+    <input type="submit" value="Применить фильтр" class="btn btn-default" />
+
+</form>
+
+<form style="display:inline">
+    <input type="submit" value="Отменить" class="btn btn-default" />
+</form>
+<p></p>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString")
+        <input type="submit" value="Поиск" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LibraryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Format)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LibraryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producer.ProducerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Format)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "EditLibrarySample", new { id = item.LibrarySampleId }) |
+                @Html.ActionLink("Удалить библиотеку", "DeleteLibrarySample", new { id = item.LibrarySampleId })
+            </td>
+        </tr>
+    }
+
+</table>

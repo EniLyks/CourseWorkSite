@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Админская панель";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h1>Плагины</h1>
+            <p class="lead">Перейти на страницу редактирования плагинов</p>
+            <p>@Html.ActionLink("Перейти", "TablePlugin", "Admin", new { htmlAttributes = new { @class = "btn btn-default" } })</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h1>DAW</h1>
+            <p class="lead">Перейти на страницу редактирования DAW</p>
+            <p>@Html.ActionLink("Перейти", "TableDAW", "Admin")</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h1>Семплы</h1>
+            <p class="lead">Перейти на страницу редактирования семплов</p>
+            <p>@Html.ActionLink("Перейти", "TableLibrarySample", "Admin")</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h1>Произво дители</h1>
+            <p class="lead">Перейти на страницу редактирования производителей</p>
+            <p>@Html.ActionLink("Перейти", "TableProducer", "Admin", new { htmlAttributes = new { @class = "btn btn-default" } })</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h1>Типы плагинов</h1>
+            <p class="lead">Перейти на страницу редактирования типов для плагинов</p>
+            <p>@Html.ActionLink("Перейти", "TableTypePlugin", "Admin")</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">
+            <h1>Пакеты плагинов</h1>
+            <p class="lead">Перейти на страницу редактирования пакетов плагинов</p>
+            <p>@Html.ActionLink("Перейти", "TablePackagePlugin", "Admin")</p>
+        </div>
+    </div>
+</div>

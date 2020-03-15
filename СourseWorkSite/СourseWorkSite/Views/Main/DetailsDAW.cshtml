@@ -1,0 +1,48 @@
+﻿@model СourseWorkSite.Models.DAW
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2> @Html.DisplayFor(model => model.DAWName)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DAWName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DAWName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </dt>
+
+        <dd>
+            @Html.ActionLink((string)ViewBag.Producer, "DetailsProducer", new { Id = Model.ProducerId })
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Вернуться к списку DAW", "PageDAW")
+</p>

@@ -1,0 +1,37 @@
+﻿@model СourseWorkSite.Models.LibrarySampleViewModel
+@using СourseWorkSite.Helpers
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Библиотеки семплов";
+}
+
+<h2>Страница с библиотеками семплов</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Поиск" />
+    </p>
+}
+<label>Сортировка: </label>
+@Html.ActionLink("По имени", "PageLibrarySample", new { sortOrder = ViewBag.NameSortParam, currentFilter = ViewBag.CurrentFilter }) |
+@Html.ActionLink("По цене", "PageLibrarySample", new { sortOrder = ViewBag.CostSortParam, currentFilter = ViewBag.CurrentFilter })
+@foreach (var item in Model.LibrarySamples)
+{
+    <div class="jumbotron">
+        <p>
+            @Html.ActionLink(@item.LibraryName, "DetailsLibrarySample", new { id = item.LibrarySampleId })
+        </p>
+        <p>Производитель: @Html.ActionLink(@item.Producer.ProducerName, "DetailsProducer", new { id = item.ProducerId })</p>
+        <p>@item.Format</p>
+        <p>Цена: @item.Cost</p>
+    </div>
+}
+<br />
+<div class="btn-group">
+    @Html.PageLinks(Model.PageInfo, x => Url.Action("PageLibrarySample", new { page = x, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>
+
+

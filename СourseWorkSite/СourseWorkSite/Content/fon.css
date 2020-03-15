@@ -1,0 +1,7 @@
+﻿@charset "UTF-8";
+
+body {
+    background: url("~/Images/lampa.png") /100% center;
+    background-size: cover;
+    opacity: 1;
+}

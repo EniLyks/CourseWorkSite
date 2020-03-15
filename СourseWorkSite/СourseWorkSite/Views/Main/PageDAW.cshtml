@@ -1,0 +1,37 @@
+﻿@model СourseWorkSite.Models.DAWViewModel
+@using СourseWorkSite.Helpers
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@{
+    ViewBag.Title = "DAW";
+}
+
+<h2>Страница с DAW</h2>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Поиск" />
+    </p>
+}
+<label>Сортировка: </label>
+@Html.ActionLink("По имени", "PageDAW", new { sortOrder = ViewBag.NameSortParam, currentFilter = ViewBag.CurrentFilter }) |
+@Html.ActionLink("По цене", "PageDAW", new { sortOrder = ViewBag.CostSortParam, currentFilter = ViewBag.CurrentFilter })
+@foreach (var item in Model.DAWs)
+{
+    <div class="jumbotron">
+        <p>
+            @Html.ActionLink(@item.DAWName, "DetailsDAW", new { id = item.DAWId })
+        </p>
+        <p>Производитель: @Html.ActionLink(@item.Producer.ProducerName, "DetailsProducer", new { id = item.ProducerId })</p>
+        <p>Цена: @item.Cost</p>
+    </div>
+}
+<br />
+<div class="btn-group">
+    @Html.PageLinks(Model.PageInfo, x => Url.Action("PageDAW", new { page = x, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>
+
+

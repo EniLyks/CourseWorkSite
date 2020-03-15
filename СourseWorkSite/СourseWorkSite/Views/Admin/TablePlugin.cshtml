@@ -1,0 +1,78 @@
+﻿@model IEnumerable<СourseWorkSite.Models.Plugin>
+
+@{
+    ViewBag.Title = "Таблица плагинов";
+}
+
+<h2>Таблица плагинов</h2>
+
+<form method="get" style="display:inline" class="form-inline">
+    <p>@Html.ActionLink("Добавить плагин", "CreatePlugin")</p>
+    <label>Теги: </label>
+    @Html.DropDownList("producerId", ViewBag.Producers as SelectList, htmlAttributes: new { @class = "form-control" })
+    @Html.DropDownList("typePluginId", ViewBag.TypePlugins as SelectList, htmlAttributes: new { @class = "form-control" })
+    @Html.DropDownList("packagePluginId", ViewBag.PackagePlugins as SelectList, htmlAttributes: new { @class = "form-control" })
+    <input type="submit" value="Применить фильтр" class="btn btn-default" />
+
+</form>
+
+<form style="display:inline">
+    <input type="submit" value="Отменить" class="btn btn-default" />
+</form>
+<p></p>
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString")
+        <input type="submit" value="Поиск" />
+    </p>
+}
+
+<p></p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PluginName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PackageId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypePluginId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PluginName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producer.ProducerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackagePlugin.PackageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypePlugin.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "EditPlugin", new { id = item.PluginId }) |
+                @Html.ActionLink("Удалить плагин", "DeletePlugin", new { id = item.PluginId })
+            </td>
+        </tr>
+    }
+
+</table>

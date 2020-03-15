@@ -1,0 +1,51 @@
+﻿@model СourseWorkSite.Models.LibrarySample
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = @Html.DisplayFor(model => model.LibraryName);
+}
+
+<h2> @Html.DisplayFor(model => model.LibraryName)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </dt>
+
+        <dd>
+            @Html.ActionLink(Model.Producer.ProducerName, "DetailsProducer", new { id = Model.ProducerId })
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Format)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Format)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Вернуться к списку библиотек", "PageLibrarySample")
+</p>

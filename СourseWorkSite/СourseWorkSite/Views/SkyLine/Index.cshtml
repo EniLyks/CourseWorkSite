@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/fon.css" />
+    <style>
+        .text {
+            position: relative;
+            padding-right: 700px;
+            font-family: Papyrus
+        }
+        .text2 {
+            position: relative;
+            padding-left: 00px;
+            font-family: 'Myriad Pro';
+            opacity: 1;
+        }
+        .text3 {
+            position: relative;
+            padding-right: 500px;
+            font-family: Papyrus;
+            opacity: .1
+        }
+    </style>
+</head>
+
+<body link="red" hover="red" background="~/Images/lampa.png">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Mr. SkyLine", "Index", "SkyLine", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("На главную", "HomePage", "Main")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p align="center" style="font-size: 40px" class="text"><strong><br>D E S I R E<br>I D E A<br>A N D<br>D R E A M <br></strong></p>
+    <p align="center" style="font-size: 32px" class="text3"><strong>. . . H O M I E </strong></p>
+    <p align="center">
+        <span style="font-size: 38px" class="text2"><a href="https://vk.com/feed" style="color: ghostwhite">Mr. SkyLine in VK</a></span>
+    </p>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
+
+
+
+

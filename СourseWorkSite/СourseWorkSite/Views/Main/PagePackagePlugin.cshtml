@@ -1,0 +1,36 @@
+﻿@model СourseWorkSite.Models.PackagePluginViewModel
+@using СourseWorkSite.Helpers
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Пакеты плагинов";
+}
+
+<h2>Страница с пакетами</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Найти по имени: @Html.TextBox("searchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Поиск" />
+    </p>
+}
+<label>Сортировка: </label>
+@Html.ActionLink("По имени", "PagePackagePlugin", new { sortOrder = ViewBag.NameSortParam, currentFilter = ViewBag.CurrentFilter })
+@foreach (var item in Model.PackagePlugins)
+{
+    if ((item.PackagePluginId != 0)&&(item.PackagePluginId != 1))
+    {
+        <div class="jumbotron">
+            <p>
+                @Html.ActionLink(@item.PackageName, "DetailsPackagePlugin", new { id = item.PackagePluginId })
+            </p>
+            <p>Производитель: @Html.ActionLink(@item.Producer.ProducerName, "DetailsProducer", new { id = item.ProducerId })</p>
+        </div>
+    }
+}
+<br />
+<div class="btn-group">
+    @Html.PageLinks(Model.PageInfo, x => Url.Action("PagePackagePlugin", new { page = x, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>

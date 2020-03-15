@@ -1,0 +1,75 @@
+﻿@model СourseWorkSite.Models.PackagePlugin
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@{
+    ViewBag.Title = @Html.DisplayFor(model => model.PackageName);
+}
+
+<h2>@Html.DisplayFor(model => model.PackageName)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PackageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PackageName)
+        </dd>
+        @if (Model.PackagePluginId != 1)
+        {
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerId)
+        </dt>
+
+        <dd>
+            @Html.ActionLink(Model.Producer.ProducerName, "DetailsProducer", new { Id = Model.ProducerId })
+        </dd>
+        }
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            Входящие в состав плагины:
+        </th>
+    </tr>
+    @if (Model.Plugin.Count > 0)
+    {
+        foreach (var item in Model.Plugin)
+        {
+    <tr>
+        <td>
+            @Html.ActionLink(item.PluginName, "DetailsPlugin", new { id = item.PluginId })
+        </td>
+        <td>
+            @Html.ActionLink(item.TypePlugin.Type, "DetailsTypePlugin", new { id = item.TypePluginId }, new { @target = "_blank" })
+        </td>
+    </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td>
+                В данный пакет не входит ни один плагин ( Зачем же он тогда нужен?:\ )
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    @Html.ActionLink("Вернуться на страницу", "PagePackagePlugin")
+</p>
